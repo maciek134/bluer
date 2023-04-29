@@ -503,7 +503,7 @@ define_properties!(
         ///	characteristic are currently enabled.
         property(
             Notifying, bool,
-            dbus: (CHARACTERISTIC_INTERFACE, "Notifying", bool, MANDATORY),
+            dbus: (CHARACTERISTIC_INTERFACE, "Notifying", bool, OPTIONAL),
             get: (notifying, v => {v.to_owned()}),
         );
 
